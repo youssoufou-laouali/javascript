@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            text-transform: uppercase;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        
+        .entete {
+            margin: 0px;
+            text-align: center;
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+        }
+        
+        .niveau {
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+            background-color: floralwhite;
+            color: dodgerblue;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+        
+        button {
+            border: none;
+            padding: 10px;
+            color: dodgerblue;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        
+        .active {
+            color: white;
+            background-color: dodgerblue;
+        }
+        
+        .contenu {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .e,
+        .h {
+            height: 130px;
+            width: 130px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: forestgreen;
+        }
+        
+        .displayb {
+            display: block;
+        }
+        
+        .displayn {
+            display: none;
+        }
+        
+        .choix {
+            cursor: pointer;
+            color: rgba(34, 139, 34, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entete">
+        <p>GUESS THE COLOR</p>
+        <h1>RGB(178,166,142)</h1>
+    </div>
+    <div class="niveau">
+        <div><button class="newcolor">NEW COLOR</button> </div>
+        <div><button class="easy">EASY</button> | <button class="hard">HARD</button></div>
+    </div>
+    <div>
+        <div class="contenu">
+            <div class="e choix e1">1</div>
+            <div class="e choix e2">2</div>
+            <div class="e choix e3">3</div>
+        </div>
+        <div class="contenu">
+            <div class="h choix h4">4</div>
+            <div class="h choix h5">5</div>
+            <div class="h choix h6">6</div>
+        </div>
+    </div>
+
+    <script src="master.js"></script>
+</body>
+
+</html>

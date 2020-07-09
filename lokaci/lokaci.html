@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lokaci.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cont">
+        <img src="horloge.png" alt="">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+    </div>
+</body>
+
+<script>
+    const secondDiv = document.querySelector('.sec');
+    const minuteDiv = document.querySelector('.min');
+    const hourDiv = document.querySelector('.hour')
+
+    function date() {
+        const now = new Date;
+        const second = now.getSeconds();
+        const secdeg = ((second / 60) * 360 + 90);
+        secondDiv.style.transform = `rotate(${secdeg}deg)`;
+
+        const min = now.getMinutes();
+        const mindeg = ((min / 60) * 360) + ((second / 60) * 6) + 90;
+        minuteDiv.style.transform = `rotate(${mindeg}deg)`;
+
+        const hour = now.getHours();
+        const hourdeg = ((hour / 12) * 360) + ((min / 60) * 30) + 90;
+        hourDiv.style.transform = `rotate(${hourdeg}deg)`;
+    }
+    setInterval(date, 1000);
+</script>
+
+</html>

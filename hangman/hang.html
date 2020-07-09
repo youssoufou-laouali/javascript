@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>hangman</title>
+    <style>
+        body {
+            background-color: rgb(112, 185, 228);
+            padding-top: 70px;
+        }
+        
+        .contenu {
+            background-color: rgb(144, 209, 247);
+            height: 400px;
+        }
+        
+        #lose {
+            text-align: center;
+            color: brown;
+            font-size: 30px;
+        }
+        
+        .affich {
+            display: block;
+        }
+        
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center text-white">
+        <div class="h3">Press any alphabet letter below to guess the wword ans but make sure to not HANG our MAN</div>
+        <div class="d-flex mt-5 contenu">
+            <div class="col-6">
+                <div id="lose" class="hide">You Lose</div>
+                <canvas id="canvas">
+                   
+                </canvas>
+            </div>
+            <div class="container border-left border-primary col-6">
+                <div class="bg h4">Press A-Z to start playing</div>
+                <div class="bg h4 wordvalid">1</div>
+                <div class="bg h4 charfind">----</div>
+                <div class="bg h4 chance">10</div>
+                <div class="bg h4 charclick">---</div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="hang.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

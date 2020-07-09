@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/bd1257eee0.js"></script>
+    <style>
+        .bg {
+            height: 600px;
+            background-image: url("img/f.jpeg");
+            background-color: #887974;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .bgprim {
+            background-color: rgba(229, 196, 161, 0.781);
+        }
+        
+        .img1 {
+            height: 300px;
+            width: 300px;
+            cursor: pointer;
+            position: relative;
+            left: 320px;
+            top: 20px;
+        }
+        
+        .img1:hover {}
+        
+        .img1cadre {
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+        }
+        
+        .mmoin {
+            margin-left: -200px;
+        }
+        
+        .grey {
+            background-color: bisque;
+        }
+        
+        .zoom:hover {
+            transform: scale(1.1);
+        }
+        
+        .radui {
+            border-radius: 30px 0px 0px 0px;
+            position: relative;
+            bottom: 40px;
+        }
+        
+        .img-check {
+            height: 64px !important;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="text-dark text-center">
+    <div class="row pt-3">
+        <div class="col"><img src="img/mosqu.png" alt=""></div>
+        <div class="col">
+            <button type="button" class=" btn p-3" href="">Home</button>
+            <button class="btn p-3" href="">About</button>
+            <button class="btn p-3" href="">Store</button>
+        </div>
+        <div class="col">
+            <p>+123 456 789 <button class="btn btn-info ml-5" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse" id="boutton"><span id="item">0</span>items- <span id="money">0</span>FCFA</button></p>
+        </div>
+    </div>
+
+    <div class="collapse " style="width: 20rem; position: absolute; right: 0;" id="collapse">
+        <div class="card bg-info card-body">
+            <table class="table table-borderless">
+                <tbody id="tbody" class=" text-white">
+                    <tr>
+                        <td>livre</td>
+                        <td>titre</td>
+                        <td>
+                            delete
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div>
+
+        <div class="bg d-flex align-items-center justify-content-center">
+            <div class="text-center bgprim p-5 w-100">
+                <div class="display-4">Bienvenue à ALBANI Bibliotèque</div>
+                <button type="button" class="btn btn-outline-light">EXPLORER</button>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-lg-4 offset-lg-2 text-dark">
+                <h1>About <span>Us</span> </h1>
+                <p>Lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
+                <button type="button" class="btn btn-outline-dark">EXPLORE</button>
+            </div>
+            <div class="col-lg d-none d-lg-block">
+                <div class="d-flex mmoin">
+                    <img class="img1" src="img/z.jpeg" alt="">
+                    <div class="img1cadre"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grey p-5">
+            <div>
+                <h1>Our <span>Books</span></h1>
+                <button type="button" class="btn btn-outline-dark px-3 mx-3">ALL</button>
+                <button type="button" class="btn btn-outline-dark px-3 mx-3">FIKHOU</button>
+                <button type="button" class="btn btn-outline-dark px-3 mx-3">HADITH</button>
+                <button type="button" class="btn btn-outline-dark px-3 mx-3">CORAN</button>
+                <button type="button" class="btn btn-outline-dark px-3 mx-3">AT-TARIH</button>
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="input-group my-5">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text" id="btnGroupAddon"><i class="fa fa-search"></i></div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="item..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-dark justify-content-center">
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/a.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/b.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1700</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/c.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1000</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/d.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>2500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/e.png" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>500</span> FCFA</p>
+                    </div>
+                </div>
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/f.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/g.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>4500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/h.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/i.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1700</span> FCFA</p>
+                    </div>
+                </div>
+
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/j.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/k.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/l.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/m.png" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/n.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/o.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/p.png" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/q.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/r.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/s.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/t.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/u.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/v.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/w.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/y.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 15rem; overflow: hidden;">
+                    <img src="img/z.jpeg" class="card-img-top zoom" alt="..." style="height: 18rem;">
+                    <div class="text-right"><a href=""><i class="fa fa-cart-plus bg-primary radui text-white p-3"></i></a></div>
+                    <div class=" row">
+                        <h5 class="card-title ml-3">Politique</h5>
+                        <p class="card-text ml-5"><span>1500</span> FCFA</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="shopping.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

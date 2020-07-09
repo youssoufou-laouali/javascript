@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+        }
+        
+        #center {
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .container {
+            background-image: url(trou.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+            bottom: 0px;
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            margin: -3px;
+        }
+        
+        .trou {
+            background-image: url(attrape.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top;
+            transition: all 0.3s;
+        }
+        
+        .up {
+            height: 200px;
+        }
+        
+        button {
+            font-size: 20px;
+            background-color: cyan;
+            color: darkorchid;
+            letter-spacing: 2px;
+            border: darkorchid solid 3px;
+            border-radius: 7px;
+            margin-bottom: 30px;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="center">
+        <h1>CATCH ME !!! <span id="score">0</span></h1>
+        <button id="start">Start</button>
+        <div class="terrain">
+            <div class="container">
+                <div class="trou"> </div>
+            </div>
+            <div class="container">
+                <div class="trou"></div>
+            </div>
+            <div class="container">
+                <div class="trou"></div>
+            </div><br>
+            <div class="container">
+                <div class="trou"></div>
+            </div>
+            <div class="container">
+                <div class="trou"></div>
+            </div>
+            <div class="container">
+                <div class="trou"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="catch.js"></script>
+
+</html>
